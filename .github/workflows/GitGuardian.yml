@@ -25,5 +25,5 @@ jobs:
       - name: Run GitGuardian Scan
         uses: GitGuardian/ggshield/actions/secret@v1.37.0
         env:
-          GITHUB_TOKEN: ${{ secrets.Token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
